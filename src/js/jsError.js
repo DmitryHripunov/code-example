@@ -1,0 +1,1 @@
+bodyElem.classList.remove('no-js');

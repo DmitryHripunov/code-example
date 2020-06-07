@@ -1,0 +1,44 @@
+.address-page {
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 700;
+  
+  .address-page__list {
+    @include list-reset;
+  } 
+
+  .address-page__item:first-child {
+    margin-bottom: 29px;
+  }
+
+  @include phone {
+    .address-page__item:first-child {
+      margin-bottom: 18px;
+    }
+  }
+
+  .address-page__link {
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 35px;
+    transition:  .3s ease;
+
+    &:hover {
+      color: $color-red3;
+      transition: color .3s ease;
+    }
+
+    @include phone {
+      background-size: 15px;
+      font-size: 19px;
+    }
+  }
+
+  .address-page__link_phone {
+    background-image: url("../img/tel.png");
+  }
+
+  .address-page__link_maill {
+    background-image: url("../img/mail.png");
+  }
+}

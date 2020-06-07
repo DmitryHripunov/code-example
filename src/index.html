@@ -1,0 +1,477 @@
+  <!DOCTYPE html>
+  <html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Дмитрий Хрипунов Frontend-разработчик." />
+    <meta name="apple-mobile-web-app-able" content="yes">
+    <title>Frontend-разработка сайтов</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-900.woff2" as="font">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
+    <script src="js/all.js" defer></script>  
+  </head>
+  <body class="no-js">
+    <!-- begin header -->
+    <header class="header-page header-page_js">
+      <div class="fixed-container header-page__container">
+        <button  class="header-page__burger-btn header-page__burger-btn_js" aria-label="открыть навигацию" aria-expanded="false" aria-controls="navigation"></button>
+
+        <nav class="header-page__nav page-nav" id="navigation">
+          <ul class="page-nav__list">
+            <li class="page-nav__item">
+              <a class="page-nav__link navigation-js" href="#skills">Услуги</a>
+            </li>
+
+            <li class="page-nav__item">
+              <a class="page-nav__link navigation-js" href="#portfolio">Портфолио</a>
+            </li>
+
+            <li class="page-nav__item">
+              <a class="page-nav__link navigation-js" href="#services">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-page__contacts page-contacts">
+          <a class="page-contacts__link" href="tel:+79042649729">+7 904 264-97-29</a>
+
+          <button class="btn page-contacts__btn btn_transparent modal-btn-js" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+
+          <button class="btn btn_icon modal-btn-js" type="button"  aria-label="Заказать звонок"></button>
+        </div>
+      </div>
+    </header>  
+    <!-- end header -->
+    <!-- begin main -->
+    <main>
+      <!-- begin main-section -->
+      <section class="main-section ">
+        <div class="fixed-container">
+          <h1 class="main-section__title">Дмитрий Хрипунов
+            <span class="main-section__subtitle">Frontend-разработчик и веб-верстальщик</span>
+          </h1>
+
+          <a class="btn btn_red btn_element navigation-js" href="#skills">Узнать больше</a>
+        </div>
+
+        <picture> 
+          <source media="(max-width: 768px)" type="image/webp" 
+                  srcset="img/webp/shutterstock.webp 1x,
+                          img/webp/shutterstock_@x2.webp 2x,
+                          img/webp/shutterstock_@x3.webp 3x">
+
+        <source media="(max-width: 900px)" type="image/webp" 
+                srcset="img/webp/shutterstock.webp 1x,
+                        img/webp/shutterstock_@x2.webp 2x,
+                        img/webp/shutterstock_@x3.webp 3x">
+        
+        <source type="image/webp" 
+                srcset="img/webp/shutterstock.webp 1x,
+                        img/webp/shutterstock_@x2.webp 2x,
+                        img/webp/shutterstock_@x3.webp 3x">
+                      
+        
+        <source media="(max-width: 768px)" 
+                srcset="img/webp/shutterstock.png 1x,
+                        img/webp/shutterstock_@x2.png 2x,
+                        img/webp/shutterstock_@x3.png 3x">
+
+      <source media="(max-width:900px)" 
+              srcset="img/webp/shutterstock.png 1x,
+                        img/webp/shutterstock_@x2.png 2x,
+                        img/webp/shutterstock_@x3.png 3x">
+                                                                                                              
+        <img class="main-section__img" 
+            src="img/shutterstock.png"
+            srcset="img/shutterstock_@x2.png 2x"
+            alt="фотография верстальщика">   
+      </picture>
+
+      </section>
+      <!-- end main-section -->
+      <!--begin skills  -->
+      <section class="skills page-section page-section-js" id="skills">
+        <div class="fixed-container">
+          <h2 class="skills__title page-section__title">Что я делаю</h2>
+
+          <ul class="skills__list ">
+            <li class="skills__item">
+              <p class="skills__paragraph skills__paragraph_development">Вёрстка лендинг–страниц и&nbsp;сайтов&nbsp;любой сложности</p>
+            </li>
+
+            <li class="skills__item">
+              <p class="skills__paragraph skills__paragraph_adaptation">Адаптивная вёрстка под&nbsp;все браузеры&nbsp;и&nbsp;устройства</p>
+            </li>
+
+            <li class="skills__item">
+              <p class="skills__paragraph skills__paragraph_programming">Frontend–разработка и&nbsp;программирование</p>
+            </li>
+
+            <li class="skills__item">
+              <p class="skills__paragraph skills__paragraph_modification">Исправление и доработка существующей вёрстки</p>
+            </li>
+          </ul>
+
+          <a href="#services" class="btn btn_red navigation-js">Узнать стоимость</a>
+        </div>
+      </section>
+      <!-- end skills -->
+      <!-- begin portfolio -->
+      <section class="portfolio page-section page-section-js" id="portfolio">
+        <div class="fixed-container">
+          <h2 class="page-section__title portfolio__title">Примеры моих работ</h2>
+
+          <div class="portfolio__carousel works-gallery portfolio__carousel-js" >
+            <div class="works-gallery__control">
+              <button class="works-gallery__button works-gallery__button_prev works-gallery__button_prev-js" 
+                    type="button" aria-label="предыдущий слайд"></button>
+
+              <button class="works-gallery__button works-gallery__button_next works-gallery__button_next-js" 
+                    type="button" aria-label="следующий слайд"></button>
+            </div>
+
+            <div class="portfolio__list portfolio__list-js">
+              <div class="portfolio__item portfolio__item-js">
+                <a href="./first-content" target="_blank" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                      <source media="(max-width: 700px)" type="image/webp" 
+                              srcset="img/webp/g1.webp 1x, 
+                                      img/webp/g1@x2.webp 2x,
+                                      img/webp/g1@x3.webp 3x">
+
+                      <source media="(max-width: 1210px)" type="image/webp" 
+                              srcset="img/webp/g1.webp 1x, 
+                                      img/webp/g1@x2.webp 2x,
+                                      img/webp/g1@x3.webp 3x">
+                      
+                      <source type="image/webp" 
+                              srcset="img/webp/g1.webp 1x, 
+                                      img/webp/g1@x2.webp 2x,
+                                      img/webp/g1@x3.webp 3x">
+                      
+                      <source media="(max-width: 1210px)" 
+                              srcset="img/webp/g1.jpg 1x, 
+                                      img/webp/g1@x2.jpg 2x,
+                                      img/webp/g1@x3.jpg 3x">
+
+
+                      <source media="(max-width: 700px)"
+                              srcset="img/webp/g1.jpg 1x, 
+                                      img/webp/g1@x2.jpg 2x,
+                                      img/webp/g1@x3.jpg 3x">
+
+                      <img class="portfolio__img" src="img/g1.jpg" 
+                                                  srcset="img/g1@x2.jpg 2x"  alt="Сайт психолога Веры Антоновой">
+                    </picture>
+                    
+                    <figcaption class="portfolio__figcaption">Сайт психолога Веры Антоновой</figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="portfolio__item portfolio__item-js">
+                <a href="./travelCream" target="_blank" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                          <source media="(max-width: 700px)" type="image/webp"
+                            srcset="img/webp/g2.webp 1x, 
+                                      img/webp/g2@x2.webp 2x,
+                                      img/webp/g2@x3.webp 3x">
+
+                      <source media="(max-width: 1210px)" type="image/webp" 
+                              srcset="img/webp/g2.webp 1x, 
+                                      img/webp/g2@x2.webp 2x,
+                                      img/webp/g2@x3.webp 3x">
+                      
+                      <source type="image/webp" 
+                              srcset="img/webp/g2.webp 1x, 
+                                      img/webp/g2@x2.webp 2x,
+                                      img/webp/g2@x3.webp 3x">
+                      
+                      <source media="(max-width: 1210px)" 
+                              srcset="img/webp/g2.jpg 1x, 
+                                      img/webp/g2@x2.jpg 2x,
+                                      img/webp/g2@x3.jpg 3x">
+
+                      <source media="(max-width: 700px)"
+                              srcset="img/webp/g2.jpg 1x, 
+                                      img/webp/g2@x2.jpg 2x,
+                                      img/webp/g2@x3.jpg 3x">
+
+                      <img class="portfolio__img" src="img/g2.jpg" 
+                                                  srcset="img/g2@x2.jpg 2x" alt="Сайт магазина детской одежды">
+                    </picture>
+
+                    <figcaption class="portfolio__figcaption">Сайт магазина детской одежды</figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="portfolio__item portfolio__item-js">
+                <a href="./home" target="_blank" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                      <source media="(max-width: 700px)" type="image/webp"
+                              srcset="img/webp/g3.webp 1x, 
+                                      img/webp/g3@x2.webp 2x,
+                                      img/webp/g3@x3.webp 3x">
+                                                              
+                      <source media="(max-width: 1210px)" type="image/webp" 
+                              srcset="img/webp/g3.webp 1x, 
+                                      img/webp/g3@x2.webp 2x,
+                                      img/webp/g3@x3.webp 3x">
+                      
+                      <source type="image/webp" 
+                              srcset="img/webp/g3.webp 1x, 
+                                      img/webp/g3@x2.webp 2x,
+                                      img/webp/g3@x3.webp 3x">
+                      
+                      <source media="(max-width: 1210px)" 
+                              srcset="img/webp/g3.jpg 1x, 
+                                      img/webp/g3@x2.jpg 2x,
+                                      img/webp/g3@x3.jpg 3x">
+                                  
+                      <source media="(max-width: 700px)"
+                              srcset="img/webp/g3.jpg 1x, 
+                                      img/webp/g3@x2.jpg 2x,
+                                      img/webp/g3@x3.jpg 3x">
+
+                      <img class="portfolio__img" src="img/g3.jpg" 
+                                                  srcset="img/g3@x2.jpg 2x" alt="Сайт магазина «Рыболов»">
+                    </picture>
+
+                    <figcaption class="portfolio__figcaption">Сайт магазина «Рыболов»</figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="portfolio__item portfolio__item-js">
+                <a href="#" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                      <source media="(max-width: 700px)" type="image/webp" srcset="img/webp/g1.webp 1x, 
+                                                    img/webp/g1@x2.webp 2x,
+                                                    img/webp/g1@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" type="image/webp" srcset="img/webp/g1.webp 1x, 
+                                                    img/webp/g1@x2.webp 2x,
+                                                    img/webp/g1@x3.webp 3x">
+              
+                      <source type="image/webp" srcset="img/webp/g1.webp 1x, 
+                                                    img/webp/g1@x2.webp 2x,
+                                                    img/webp/g1@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" srcset="img/webp/g1.jpg 1x, 
+                                                    img/webp/g1@x2.jpg 2x,
+                                                    img/webp/g1@x3.jpg 3x">
+              
+              
+                      <source media="(max-width: 700px)" srcset="img/webp/g1.jpg 1x, 
+                                                    img/webp/g1@x2.jpg 2x,
+                                                    img/webp/g1@x3.jpg 3x">
+              
+                      <img class="portfolio__img" src="img/g1.jpg" srcset="img/g1@x2.jpg 2x" alt="Сайт психолога Веры Антоновой">
+                    </picture>
+              
+                    <figcaption class="portfolio__figcaption">Сайт психолога Веры Антоновой</figcaption>
+                  </figure>
+                </a>
+              </div>
+               
+              <div class="portfolio__item portfolio__item-js">
+                <a href="#" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                      <source media="(max-width: 700px)" type="image/webp" srcset="img/webp/g2.webp 1x, 
+                                                    img/webp/g2@x2.webp 2x,
+                                                    img/webp/g2@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" type="image/webp" srcset="img/webp/g2.webp 1x, 
+                                                    img/webp/g2@x2.webp 2x,
+                                                    img/webp/g2@x3.webp 3x">
+              
+                      <source type="image/webp" srcset="img/webp/g2.webp 1x, 
+                                                    img/webp/g2@x2.webp 2x,
+                                                    img/webp/g2@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" srcset="img/webp/g2.jpg 1x, 
+                                                    img/webp/g2@x2.jpg 2x,
+                                                    img/webp/g2@x3.jpg 3x">
+              
+                      <source media="(max-width: 700px)" srcset="img/webp/g2.jpg 1x, 
+                                                    img/webp/g2@x2.jpg 2x,
+                                                    img/webp/g2@x3.jpg 3x">
+              
+                      <img class="portfolio__img" src="img/g2.jpg" srcset="img/g2@x2.jpg 2x" alt="Сайт магазина детской одежды">
+                    </picture>
+              
+                    <figcaption class="portfolio__figcaption">Сайт магазина детской одежды</figcaption>
+                  </figure>
+                </a>
+              </div>
+              
+              <div class="portfolio__item portfolio__item-js">
+                <a href="#" class="portfolio__link">
+                  <figure class="portfolio__figure">
+                    <picture>
+                      <source media="(max-width: 700px)" type="image/webp" srcset="img/webp/g3.webp 1x, 
+                                                    img/webp/g3@x2.webp 2x,
+                                                    img/webp/g3@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" type="image/webp" srcset="img/webp/g3.webp 1x, 
+                                                    img/webp/g3@x2.webp 2x,
+                                                    img/webp/g3@x3.webp 3x">
+              
+                      <source type="image/webp" srcset="img/webp/g3.webp 1x, 
+                                                    img/webp/g3@x2.webp 2x,
+                                                    img/webp/g3@x3.webp 3x">
+              
+                      <source media="(max-width: 1210px)" srcset="img/webp/g3.jpg 1x, 
+                                                    img/webp/g3@x2.jpg 2x,
+                                                    img/webp/g3@x3.jpg 3x">
+              
+                      <source media="(max-width: 700px)" srcset="img/webp/g3.jpg 1x, 
+                                                    img/webp/g3@x2.jpg 2x,
+                                                    img/webp/g3@x3.jpg 3x">
+              
+                      <img class="portfolio__img" src="img/g3.jpg" srcset="img/g3@x2.jpg 2x" alt="Сайт магазина «Рыболов»">
+                    </picture>
+              
+                    <figcaption class="portfolio__figcaption">Сайт магазина «Рыболов»</figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>  
+          </div>
+
+          <div class="portfolio__pagination portfolio__pagination-js">
+            <button class="portfolio__pagination-btn portfolio__pagination-btn_start portfolio__pagination-btn_start-js"  aria-label="первый слайд"></button>
+            <button class="portfolio__pagination-btn portfolio__pagination-btn_center portfolio__pagination-btn_center-js" aria-label="второй слайд"></button>
+            <button class="portfolio__pagination-btn portfolio__pagination-btn_end portfolio__pagination-btn_end-js" aria-label="третий слайд"></button>
+          </div>
+
+          <button class="btn btn_red modal-btn-js" type="button" aria-label="Заказать проект">Заказать проект</button>
+        </div>
+      </section>
+      <!-- end portfolio -->
+      <!-- begin services -->
+      <section class="services page-section-js" id="services">
+        <div class="fixed-container">
+          <h2 class="visually-hidden">Сроки и стоимость</h2>
+    
+          <p class="services__paragrph">Адаптивная&nbsp;вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</p>
+
+          <p class="services__footnote">
+            <small class="services__footnote_small">* Срок и стоимость могут отличаться от&nbsp;заявленных и рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</small>
+          </p>
+        </div>
+      </section>
+      <!-- end services -->
+    </main>
+    <!-- end main -->
+    <!-- begin footer -->
+    <footer class="footer">
+      <div class="fixed-container footer__container">
+        <nav class="footer__nav page-nav_footer page-nav">
+          <ul class="page-nav_footer__list">
+            <li class="page-nav_footer__item">
+              <a class="page-nav_footer__link  navigation-js" href="#skills">Услуги</a>
+            </li>
+        
+            <li class="page-nav_footer__item">
+              <a class="page-nav_footer__link  navigation-js" href="#portfolio">Портфолио</a>
+            </li>
+        
+            <li class="page-nav_footer__item">
+              <a class="page-nav_footer__link  navigation-js" href="#services">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="footer__address address-page">
+          <ul class="address-page__list">
+            <li class="address-page__item">
+              <a class="address-page__link address-page__link_phone" href="tel:+79042649729">+7 904 264-97-29</a>
+            </li>
+
+            <li class="address-page__item">
+              <a class="address-page__link address-page__link_maill" target="_blank" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%5f%70%65%6b%74%72%5f%65%40%6d%61%69%6c%2e%72%75">dmitry@frontEnd.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer__socials socials">
+          <button class="btn btn_transparent socials__btn modal-btn-js" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link_vk" title="поделиться в ВКонтакте" href="https://vk.com/share.php?url=http://Дмитрий Хрипунов frontend-разработка сайтов" target="_blank" aria-label="профиль в контакте"></a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__link_fb" title="поделиться в facebook" data-href="http://xdvweb.ru/" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fxdvweb.ru%2F&amp;src=sdkpreparse"  aria-label="поделиться в фейсбуке"></a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__link_twitter" title="поделиться в twitter" href="http://twitter.com/share?text=Дмитрий Хрипунов frontend-разработчик &url=http://xdweb.ru/" target="_blank" aria-label="поделиться в твиттер"></a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link socials__link_instagram" title="поделиться в instagramm" href="https://www.instagram.com/dmitryhripunov/" target="_blank" aria-label="поделиться в инстограмм"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copyright">© Дмитрий Хрипунов, 2020</p>    
+    </footer>
+    <!-- end footer -->
+    <!-- begin modal -->
+    <div class="modal modal-js" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description"
+        aria-hidden="true" aria-modal="false">
+      <form class="modal-content modal-content-js" id="myForm"  name="myForm" method="POST" action="/">
+        <button class="close-modal close-modal-js" aria-label="закрыть модальное окно"></button>
+
+        <h2 id="modal-title" class="modal__title">Заказать звонок</h2>
+
+        <p id="modal-description" class="visually-hidden">Оставьте ваш номер телефона</p>
+        
+        <input class="modal__input modal__input-js" type="text" name="firstname"  placeholder="Имя" required>
+
+        <input class="modal__input modal__input_tel  modal__input_tel-js" type="text" name="tel" placeholder="+7 ___ __ __ __" required>
+
+        <input id="submit" class="modal__submit-btn btn_red" aria-label="отправить данные" type="submit" value="Отправить">
+      </form>
+    </div>
+    <!-- end modal -->
+
+    <!-- Yandex.Metrika counter -->
+    <script>
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(61643389, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+      });
+    </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/61643389" style="position:absolute; left:-9999px;" alt="метрика" />
+      </div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+  </html>

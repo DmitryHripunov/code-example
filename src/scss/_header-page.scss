@@ -1,0 +1,184 @@
+.header-page {
+  padding: 26px 0;
+    
+  .header-page__container {
+    @include flex-between;
+    @include phablet {
+      align-items: flex-start;
+    }
+  } 
+
+  .header-page__burger-btn {
+    display: none;
+  }
+
+  .header-page__contacts {
+    max-width: 460px;
+    @include phablet {
+      display: flex;
+    }
+  }
+}
+
+.page-contacts {
+  .page-contacts__link {
+    min-width: 220px;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, $color-red4, $color-red3 50%, #000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 95%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+
+
+
+  .page-contacts__btn {
+    margin-left: 25px;
+  }
+}
+
+  @include notebook {
+    .header-page {
+      padding: 29px 0;
+  
+      .header-page__nav {
+        display: none ;
+      }
+
+      .header-page__burger-btn {
+        display: block;
+        width: 45px;
+        min-height: 33px;
+        cursor: pointer;
+        background-image: repeating-linear-gradient(0deg, transparent 20px,
+                          transparent, transparent, #ff3294, #fe8f58);
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+    @include phablet {
+    .header-page {
+      .header-page__burger-btn {
+        width: 25px;
+        min-height: 22px;
+        background-image: repeating-linear-gradient(0deg, transparent 14px,
+                        transparent, transparent, #ff3294, #fe8f58);
+      }
+    }
+  
+  .page-contacts {
+    .page-contacts__link {
+      font-size: 18px;
+      min-width: 158px;
+
+    .page-contacts__btn {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// styles burger on click
+@include notebook {
+  .menu-open {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+    .header-page__burger-btn {
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      z-index: 1111;
+      width: 40px;
+      min-height: 33px;
+      transform: rotate(45deg);
+      background-image: repeating-linear-gradient(0deg, transparent, transparent,  25px,
+                            transparent, transparent,   #ff3294, #fe8f58);
+     transition: ease-out 0.2s ;
+      &:focus,
+      &:active {
+        filter: drop-shadow(0 0 10px #ff3294);
+      }   
+    }
+
+    .header-page__burger-btn::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      left: 14px;
+      width: 40px;
+      min-height: 33px;
+      z-index: 1111;
+      transform: rotate(-90deg);
+      background-image: repeating-linear-gradient(0deg,  transparent, transparent,  25px,
+                      transparent, transparent,   #ff3294, #fe8f58);
+              
+    }
+ 
+    .header-page__contacts {
+      z-index: 111;
+    }
+    
+    .header-page__nav  {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 150px 10px 110px 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-white;
+      top: 0;
+      z-index: 111; 
+    } 
+
+    .page-nav__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-nav__item {
+     text-align: center;
+     margin-bottom: 40px;
+    }
+  }
+}
+
+  @include phablet {
+    .menu-open {
+      .header-page__burger-btn {
+        top: 10px;
+        width: 25px;
+        min-height: 25px;
+        background-image: repeating-linear-gradient(0deg,  transparent, transparent,    20px,
+                    transparent, transparent,     #ff3294, #fe8f58);                      
+      }
+
+      .header-page__burger-btn::before {
+        top: -12px;
+        left: 12px;
+        width: 25px;
+        min-height: 25px; 
+        background-image: repeating-linear-gradient(0deg,  transparent, transparent,  20px,
+                    transparent, transparent,   #ff3294, #fe8f58);
+      }
+
+      .header-page__nav  {
+        padding: 100px 10px 110px 20px;
+      }
+    }
+  }

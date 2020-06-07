@@ -1,0 +1,78 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  background-color: $color-white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: $color-gray;
+  margin: 0;
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /*IE6, IE*/
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; 
+}
+
+.modal {
+  display: none;
+}
+
+.fixed-container {
+  max-width: 1235px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 25px;
+}
+
+ @include desktop {
+  .fixed-container {
+    max-width: 1024px;
+  }
+}
+
+@include phablet  {
+  .fixed-container {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+}
+
+
+
+

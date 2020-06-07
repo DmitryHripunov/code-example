@@ -1,0 +1,340 @@
+.main-section {
+  position: relative;
+  padding: 200px 0 236px 0;
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - -125px);
+  background-position-y: 40px;
+
+  .main-section__title {
+    display: block;
+    position: relative;
+	  max-width: vw(725);
+	  line-height: 70px;
+    margin: 0 0 30px 0;
+    font-size: vw(80);
+    font-weight: 900;
+    
+    &::after {
+      content: "#";
+      position: absolute;
+      display: block;
+      color: $color-red3;
+      font-size: 54px;
+      transform: rotate(20deg);
+      top: vw(60);
+      left: vw(-125);
+      animation-name: forLatticeRed;
+      animation-delay: .2s;
+      animation-duration:  1.8s;
+      animation-fill-mode: forwards
+    }
+
+    &::before {
+      content: "{ }";
+      position: absolute;
+      display: block;
+      color: $color-red3;
+      font-size: 42px;
+      transform: rotate(25deg);
+      top: vw(-170);
+      left: vw(-240);
+      animation-name: forBrecketRed;
+      animation-delay: .2s;
+      animation-duration:  1.8s;
+      animation-fill-mode: forwards;
+    }
+  } 
+
+  .main-section__subtitle {
+    display: block;
+    position: relative;
+	  font-size: 25px;
+	  font-weight: 400;
+    color: $color-grey3;
+    
+   &:after {
+      content: "<div>" ;
+      position: absolute;
+      color: $color-red3;
+      font-size: 30px;
+      font-weight: 600;
+      transform: rotate(-15deg);
+      top: vw(-220);
+      left:vw(415);
+      animation-name: forDivRedTop;
+      animation-delay: .2s;
+      animation-duration:  1.8s;
+      animation-fill-mode: forwards;
+    }
+
+    &::before {
+      content: "<div>";
+      position: absolute;
+      color: $color-red3;
+      font-size: 36px;
+      font-weight: 600;
+      top: vw(155);
+      left: vw(575);
+      transform: rotate(25deg);
+      animation-name: forDivRedBotton;
+      animation-delay: .2s;
+      animation-duration:  1.8s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .main-section__img {
+    float: right;
+    margin-right: 290px;
+    margin-top: -393px;
+    max-height: 640px;
+    max-width: 420px;
+    filter: drop-shadow(3px 3px 7px rgba(0,0,0,.396078));
+  }
+}
+
+@media(max-width: 1620px) {
+  .main-section {
+    .main-section__title {
+      font-size: 60px;
+      max-width: 600px;
+
+      &::before {
+        left: vw(0);
+      }
+    }
+
+    .main-section__subtitle {
+  
+      &::after {
+         left: vw(400);
+      }
+
+      &::before {
+        top: vw(350);
+        left: vw(420);
+      }
+    }
+
+    .main-section__img {
+      margin-right: 180px;
+    }
+  }
+}
+
+@media(max-width: 1360px) {
+   .main-section {
+    .main-section__title {
+      &::after {
+         left: vw(-45);
+         top: vw(480);
+      }
+
+      &::before {
+        top: vw(-200);
+        left: vw(0);
+      }
+    }
+
+    .main-section__subtitle {
+      &::after {
+         left: vw(370);
+         top: vw(-350);
+      }
+
+      &::before {
+        top: vw(400);
+        left: vw(300);
+      }
+    }
+
+    .main-section__img {
+      margin-right: 180px;
+    }
+  }
+} 
+
+@include desktop {
+  .main-section {
+    padding: 197px 0 233px 0; 
+    background-size: 791px;
+    background-position-x: calc(100% - -258px);
+    background-position-y: 133px;
+
+    .main-section__img {
+      margin-top: -396px;
+      margin-right: 30px;
+    }
+
+    .main-section__title {
+      font-size: 54px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+@include notebook {
+  .main-section {
+    .main-section__title {
+      max-width: 500px;
+
+      &::after {
+         left: vw(40);
+         top: vw(650);
+      }
+
+      &::before {
+        top: vw(-300);
+        left: vw(70);
+      }
+    }
+
+    
+    .main-section__subtitle {
+      &::after {
+         left: vw(1580);
+         top: vw(-465);
+      }
+
+      &::before {
+        top: vw(-290);
+        left: vw(700);
+      }
+    }
+  }
+}
+
+@media(max-width: 980px) {
+  .main-section {
+    .main-section__title {
+      font-size: 40px;
+      max-width: 440px;
+    }
+  }
+}
+
+@media(max-width: 900px) {
+ .main-section {
+    padding-bottom: 100px;
+    background-size: 550px;
+    background-position-y: 132px;
+    background-position-x: calc(100% - -145px);
+
+    .main-section__subtitle {
+		  font-size: 16px;
+    }
+  
+    .main-section__img {
+      margin-top: -330px;
+      max-width: 320px;
+      max-height: 430px;
+    }
+  }
+}
+
+@include tablet {
+  .main-section {
+    padding-top: 160px;
+
+    .main-section__subtitle {
+      &::after {
+       display: none;
+      }
+
+      &::before {
+        top: -180px;
+      }
+    }
+  }
+}
+
+@media(max-width: 720px) {
+  .main-section {
+    
+    .main-section__title {
+      font-size: 34px;
+
+      &::after  {
+        font-size: 36px;
+      }
+
+      &::before {
+        font-size: 36px;
+      }
+    }
+
+    .main-section__subtitle {
+      max-width: 170px;
+      line-height: 28px;
+
+      &::before {
+        font-size: 30px;
+      }
+    }
+
+    .btn_red {
+      min-width: 190px;
+    }
+  }
+}
+
+
+@include phablet {
+  .main-section {
+    background-size: 550px;
+    background-position-y: 91px;
+    background-position-x: calc(100% - -137px);
+    text-align: center;
+    padding-top: 284px;
+    padding-bottom: 99px;
+
+    
+  .main-section__img {
+      display: block;
+      margin: -512px auto;
+      float: unset;
+      padding-left: 60px;
+      max-width: 280px;
+      max-height: 330px;
+    }
+
+
+  .main-section__title {
+      font-size: 30px;
+      line-height: 26px;
+      width: 280px;
+      margin: 118px auto 19px;
+
+      &::after {
+        left: 15px;
+        top: -275px;
+        font-size: 35px;
+      }
+
+      &::before {
+        top: -385px;
+        left: 30px;
+        font-size: 28px;
+      }
+    }
+  
+    .main-section__subtitle {
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+      max-width: 100%;
+
+      &::before {
+        top: -381px;
+        left: 222px;
+        font-size: 18px;
+      }
+    }
+
+    
+    .btn_red {
+      min-width: 280px;
+    }
+  }
+}

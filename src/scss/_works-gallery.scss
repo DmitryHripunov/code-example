@@ -1,0 +1,34 @@
+.works-gallery {
+  .works-gallery__button {
+    position: absolute;
+    top: 120px;
+    background-image: url("../img/arrow.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 65px;
+    min-height: 65px;
+    cursor: pointer;
+    filter:	drop-shadow(3px 0 5px #00000070);
+    padding: 0;
+    z-index: 100;
+  }
+
+  .works-gallery__button_prev {
+    right: calc(100% - 35px);
+  }
+
+  .works-gallery__button_next {
+    transform: rotate(180deg);
+    left: calc(100% - 40px);
+
+  }
+}
+
+@include desktop {
+  .works-gallery {
+    .works-gallery__control {
+      display: none;
+    }
+  }
+}

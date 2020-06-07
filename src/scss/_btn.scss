@@ -1,0 +1,148 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  transition:  all .3s ease; 
+}
+.btn_transparent {
+  color: $color-red2;
+  border: 1px solid $color-red3;
+  background-color: transparent;
+  padding: 15px;
+  min-width: 208px;
+  cursor: pointer;
+  transition:  background-color .3s ease-in, color .2s ease-in;
+}
+
+.btn_transparent:hover {
+  color: $color-white;
+  background-color: $color-red3; 
+  transition:  background-color .3s ease-in, color;
+  // box-shadow: 1px 5px 10px $color-gray;
+}
+
+.btn_transparent:focus {
+  background-color: $color-red4;
+  transition: all .2s ease-in;
+  color: $color-white;
+}
+
+.btn_transparent:active {
+  background-color: $color-red4;
+  transition: .3s ease-in;
+  color: $color-white;
+  box-shadow: none;
+}
+
+.btn_icon {
+  display: none !important;
+}
+
+.btn_red {
+  max-width: vw(310);
+  font-size: 18px; 
+  min-width: 270px; 
+  padding: 19px; 
+  background-color: $color-red4; 
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  @include notebook {
+    min-width: 320px;
+    padding: 22px;
+  } 
+  @include tablet {
+    padding: 17px 0;
+    min-width: 280px;
+    font-size: 16px; 
+  }
+
+  &:hover {
+    background-color: $color-red3;
+    transition:  all .3s ease; 
+  }
+
+  &:focus {
+    background-color: $color-red3;
+    transition:  all .3s ease; 
+    // outline: 3px solid #8f86dc;
+    outline: none;
+  }
+}
+
+
+@include phablet {
+  .page-contacts__btn {
+    display: none !important;
+  }
+
+   .btn_icon {
+    display: inline-block !important;
+    background-image: url("../img/ttf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    min-width: 26px;
+    min-height: 26px;
+    cursor: pointer;
+    margin-left: 35px;
+  }
+}
+
+  .btn_element {
+    position: relative;
+
+    &::after {
+      content: "</>";
+      color: red;
+      position: absolute;
+      display: block;
+      color: $color-red3;
+      transform: rotate(-20deg);
+      font-size: 42px;
+      font-weight: 600;
+      bottom: -185px;
+      left: 6px;    
+      animation-name: forSleshRedBotton ;
+      animation-delay: .2s;
+      animation-duration:  1.8s;
+      animation-fill-mode: forwards
+    }
+  }
+
+    @media(max-width: 1360px) {
+    .btn_element {
+      &::after {
+        bottom: -90px;
+        left: 315px;
+      }
+    }
+  }
+
+  @media(max-width: 960px) {
+    .btn_element {
+      &::after {
+        left: 225px;
+      }
+    }
+  }
+
+  @include tablet {
+    .btn_element {
+      &::after {
+        bottom: -66px;
+        left: 130px;
+        font-size: 28px;
+      }
+    }
+  }
+
+@include phablet {
+    .btn_element {
+      &::after {
+        font-size: 24px;
+        left: 150px;
+        bottom: 545px;
+      }
+    }
+  }
